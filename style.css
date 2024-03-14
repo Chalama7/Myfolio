@@ -537,7 +537,7 @@ img {
     }
     .home__img {
         position: absolute; /* Add this line to position the image */
-        top: 140px; /* Adjust as needed */
+        top: 145px; /* Adjust as needed */
         right: 0; /* Adjust as needed */
         transform: translate(50%, 0); /* Optional: Adjust if you need to center horizontally */
         /* Add any other styles you need */
