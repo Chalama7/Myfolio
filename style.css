@@ -543,5 +543,6 @@ img {
     width: 150px; /* Adjust size as needed */
     height: 150px; /* Adjust size as needed */
     object-fit: cover; /* Ensures the image covers the entire circle */
+    margin-right: 20px; /* Add some right margin to create space between the image and text */
 }
 
