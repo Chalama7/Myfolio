@@ -44,7 +44,9 @@ body {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     color: var(--second-color);
+    background-color: rgb(18 23 24 / var(--tw-bg-opacity)); /* Change to your desired dark color */
 }
+
 
 h1, h2, p {
     margin: 0;
@@ -534,31 +536,10 @@ img {
         padding: 10rem 0 2rem;
     }
     .home__img {
-        width: 450px;
+        position: absolute; /* Add this line to position the image */
+        top: 140px; /* Adjust as needed */
+        right: 0; /* Adjust as needed */
+        transform: translate(50%, 0); /* Optional: Adjust if you need to center horizontally */
+        /* Add any other styles you need */
     }
 }
-/* Profile Picture */
-.profile-pic {
-    border-radius: 50%; /* Makes the image circular */
-    width: 150px; /* Adjust size as needed */
-    height: 150px; /* Adjust size as needed */
-    object-fit: cover; /* Ensures the image covers the entire circle */
-    margin-right: 20px; /* Add some right margin to create space between the image and text */
-}
-/* DOWNLOAD RESUME */
-.download-resume {
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-}
-
-.download-resume__container {
-    row-gap: 2rem;
-    text-align: center;
-}
-
-.download-resume__text {
-    margin-bottom: var(--mb-4);
-    font-size: var(--normal-font-size); /* Adjust font size */
-}
-
-
