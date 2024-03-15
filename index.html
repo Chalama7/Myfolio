@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/jpeg" href=""AWS-Podcast-Title-Art.jpg"">
+    <link rel="icon" type="image/jpeg" href="AWS-Podcast-Title-Art.jpg">
     <!-- =====BOX ICONS===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <title>Chalama Reddy Venna - Portfolio</title>
@@ -39,7 +39,9 @@
             <div class="home__data">
                 <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Chalama Reddy Venna</span><br>DevOps/Cloud Engineer</h1>
                 <a href="mailto:chalama.wiu@gmail.com" class="button">Contact</a>
+                <a href="ChalamaReddy_Resume.pdf" download class="button">View my Resume</a>
             </div>
+            
 
             <div class="home__social">
                 <a href="https://www.linkedin.com/in/chalamav777/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
@@ -62,7 +64,7 @@
                     <img src="about.JPG" alt="Chalama Reddy Venna">
                 </div>                   
                 <div>
-                    <h2 class="about__subtitle">Professional Summary:</h2>
+                    
                     <p class="about__text">
                         Over 3 years of experience in Cloud Computing and DevOps. Specialized in AWS and Azure with proficiency in CI/CD principles, cloud infrastructure, and Linux/Windows distributions. Skills in Docker, Kubernetes, Jenkins, Git, Ansible, Terraform, and CloudFormation. Expertise in scripting languages: Shell, Python, Bash, Ruby, PowerShell. Experience in monitoring tools such as Nagios, CloudWatch, and Datadog. Hands-on with log management using Elasticsearch, Logstash, Kibana. Strong background in web development using JSP, HTML, CSS, JavaScript. Familiar with server management (Apache, Tomcat, Nginx). Versatile in operating systems: Linux (RedHat, CentOS, SUSE, Ubuntu), Windows. Previous work with NoSQL databases (Cassandra, MongoDB). Certified AWS Solutions Architect Associate.
                     </p>           
@@ -75,42 +77,58 @@
             <h2 class="section-title">Skills</h2>
             <div class="skills__container bd-grid">          
                 <div>
-                    <h2 class="skills__subtitle">Technical Skills</h2>
                     <p class="skills__text">
-                        Operating Systems: Ubuntu, Red Hat, Centos, Windows, Mac OS<br>
-                        Cloud Platforms: AWS, Azure<br>
-                        Version control Tools: Subversion (SVN), GIT, GIT Hub, Bit bucket, CVS<br>
-                        Containerization tools: Docker, Kubernetes<br>
-                        Configuration Management Tools: Ansible, Chef, Puppet<br>
-                        Automation & Build Tools: Jenkins, Hudson, Bamboo, Ant, Maven, Gradle, MS Build<br>
-                        Monitoring Tools & Repositories: Cloud Watch, ELK, Datadog, Grafana, Nexus, Artifactory, Jfrog<br>
-                        Application servers & Bug Tracking: Apache httpd, Tomcat, JBOSS, Web Logic, WebSphere, Nginx, JIRA, Bugzilla<br>
-                        Virtualization Tools: VMware, Virtual Box, Vagrant<br>
-                        Scripting Languages & SDLC: Shell, Python, Ruby, Bash, YAML, Groovy, Perl, JSON, Agile Scrum, Waterfall<br>
-                        Networking Protocols: TCP/IP, UDP, DNS, NFS, LDAP, SSH, SSL, SFTP, SMTP
-                    </p>
-                    <h2 class="skills__subtitle">Projects</h2>
-                    <p class="skills__text">
-                        CI/CD for Microservices on Kubernetes: Automated end-to-end deployment pipeline for microservices on Kubernetes, ensuring scalability and resilience. Skills: CI/CD, Kubernetes, Docker, Git, Helm, Monitoring.<br>
-                        Multi-Cloud IaC with Security Automation: Orchestrated secure infrastructure deployment across AWS and Azure using Terraform and Ansible, emphasizing compliance and disaster recovery. Skills: IaC, Terraform, AWS, Azure, Ansible, Security, Disaster Recovery.
+                        <strong>Operating Systems:</strong> Ubuntu, Red Hat, Centos, Windows, Mac OS<br>
+                        <strong>Cloud Platforms:</strong> AWS, Azure<br>
+                        <strong>Version control Tools:</strong> Subversion (SVN), GIT, GIT Hub, Bit bucket, CVS<br>
+                        <strong>Containerization tools:</strong> Docker, Kubernetes<br>
+                        <strong>Configuration Management Tools:</strong> Ansible, Chef, Puppet<br>
+                        <strong>Automation & Build Tools:</strong> Jenkins, Hudson, Bamboo, Ant, Maven, Gradle, MS Build<br>
+                        <strong>Monitoring Tools & Repositories:</strong> Cloud Watch, ELK, Datadog, Grafana, Nexus, Artifactory, Jfrog<br>
+                        <strong>Application servers & Bug Tracking:</strong> Apache httpd, Tomcat, JBOSS, Web Logic, WebSphere, Nginx, JIRA, Bugzilla<br>
+                        <strong>Virtualization Tools:</strong> VMware, Virtual Box, Vagrant<br>
+                        <strong>Scripting Languages & SDLC:</strong> Shell, Python, Ruby, Bash, YAML, Groovy, Perl, JSON, Agile Scrum, Waterfall<br>
+                        <strong>Networking Protocols:</strong> TCP/IP, UDP, DNS, NFS, LDAP, SSH, SSL, SFTP, SMTP
                     </p>
                 </div>
-                
+                        
                 <div>              
                     <img src="skills.jpg" alt="Skills">
                 </div>
             </div>
         </section>
-
-        <!--===== CONTACT =====-->
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact__container bd-grid">
-                <p class="contact__text">Feel free to contact me through email: <a href="mailto:chalama.wiu@gmail.com" class="contact__link">chalama.wiu@gmail.com</a></p>
-                <p class="contact__text"><a href="ChalamaReddy_Resume.pdf" download class="button">Download Resume</a></p>
+        
+            <!--===== WORK =====-->
+           
+          <h2 class="section-title">Work</h2>
+          <section class="work" id="work">
+            <div class="work__container bd-grid">
+              <!-- Repeat this block for each work -->
+              <div class="work__item">
+                <img src="work1.png" alt="Work Image" class="work__image" onclick="showDescription(this)">
+                <div class="work__description-popup">
+                    <p>It demonstrates how to create a VPC that you can use for servers in a production environment. To improve resiliency, you deploy the servers in two Availability Zones, by using an Auto Scaling group and an Application Load Balancer. For additional security, you deploy the servers in private subnets. The servers receive requests through the load balancer. The servers can connect to the internet by using a NAT gateway. To improve resiliency, you deploy the NAT gateway in both Availability Zones.
+                        Reference</p>
+                </div>
             </div>
-        </section>
-    </main>
+            
+            </div>
+                                      
+              <!-- Repeat this block for each work -->
+            </div>
+          </section>
+          
+
+       <!--===== CONTACT =====-->
+ <!--===== CONTACT =====-->
+ <section class="contact section" id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact__container bd-grid">
+        <p class="contact__text">Feel free to contact me through email: <a href="mailto:chalama.wiu@gmail.com" class="contact__link">chalama.wiu@gmail.com</a></p>
+    </div>
+</section>
+</main>
+
 
     <!--===== FOOTER =====-->
     <footer class="footer">
